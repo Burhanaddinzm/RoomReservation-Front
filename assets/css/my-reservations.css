@@ -103,7 +103,7 @@ main {
   justify-items: center;
 }
 
-.room-card {
+.reservation-card {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -113,29 +113,29 @@ main {
   position: relative;
 }
 
-.room-card:hover:not(.occupied) {
+.reservation-card:hover:not(.done) {
   scale: 1.05;
   box-shadow: rgba(127, 255, 0, 0.25) 0px 30px 40px -12px inset;
 }
 
-.occupied {
+.done {
   box-shadow: rgba(124, 9, 9, 0.25) 0px 30px 40px -12px inset;
   opacity: 0.7;
 }
 
-.room-card h2 {
+.reservation-card h2 {
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
 }
 
-.room-card p {
+.reservation-card p {
   font-size: 16px;
   margin: 10px 0;
   color: #555;
 }
 
-.room-card a {
+.reservation-card a {
   display: block;
   background-color: #28a745;
   color: white;
@@ -147,11 +147,11 @@ main {
   transition: background-color 0.3s ease;
 }
 
-.room-card a:hover:not(.occupied a) {
+.reservation-card a:hover:not(.done a) {
   background-color: #218838;
 }
 
-.occupied a {
+.done a {
   background-color: grey;
   cursor: not-allowed;
 }
@@ -163,22 +163,26 @@ main {
 }
 
 @media screen and (max-width: 1280px) {
-  .room-card {
+  .reservation-card {
     padding: 18px;
     width: 270px;
   }
 
-  .room-card h2 {
+  .reservation-card ul li {
+    font-size: 14px;
+  }
+
+  .reservation-card h2 {
     font-size: 18px;
     margin-bottom: 20px;
   }
 
-  .room-card p {
+  .reservation-card p {
     font-size: 14px;
     margin: 10px 0;
   }
 
-  .room-card a {
+  .reservation-card a {
     font-size: 14px;
     padding: 10px 20px;
     margin-top: 20px;
