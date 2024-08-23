@@ -46,6 +46,10 @@ body {
   margin: 0 auto;
 }
 
+.active {
+  border-top: 3px solid rgba(127, 255, 0, 0.5);
+}
+
 header {
   position: sticky;
   top: 0;
@@ -69,7 +73,7 @@ nav ul a {
   transition: box-shadow 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
 
-nav ul a:hover {
+nav ul li:not(.active) a:hover {
   font-size: 20px;
   box-shadow: rgba(127, 255, 0, 0.4) 5px 5px, rgba(127, 255, 0, 0.3) 10px 10px;
 }
@@ -191,7 +195,7 @@ main {
     font-size: 16px;
   }
 
-  nav ul a:hover {
+  nav ul li:not(.active) a:hover {
     font-size: 18px;
     box-shadow: rgba(127, 255, 0, 0.4) 3px 3px, rgba(127, 255, 0, 0.3) 7px 7px;
   }
@@ -212,6 +216,10 @@ main {
 }
 
 @media screen and (max-width: 425px) {
+  .active {
+    border-width: 2px;
+  }
+
   nav ul {
     gap: 4px;
     font-size: 14px;
@@ -219,7 +227,7 @@ main {
     height: 50px;
   }
 
-  nav ul a:hover {
+  nav ul li:not(.active) a:hover {
     font-size: 14px;
     box-shadow: none;
   }
