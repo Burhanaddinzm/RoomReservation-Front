@@ -3,11 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/register.css" />
     <title>Register</title>
   </head>
   <body>
-    <form action="">
-      <button type="submit">Register</button>
-    </form>
+    <div class="container">
+      <form action="">
+        <div class="input-wrapper">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name..." />
+        </div>
+        <div class="input-wrapper">
+          <label for="surname">Surname</label>
+          <input id="surname" type="text" placeholder="Enter your surname..." />
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email..." />
+        </div>
+        <div class="input-wrapper">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your password..."
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="c-password">Confirm Password</label>
+          <input
+            id="c-password"
+            type="password"
+            placeholder="Confirm your password..."
+          />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <div class="login-wrapper">
+        Already registered?
+        <a href="./login.html">Login</a>
+      </div>
+    </div>
   </body>
 </html>
