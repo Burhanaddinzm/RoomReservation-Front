@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reserve.css" />
+    <title>Reserve a Room</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="container">
+          <li>
+            <a href="./index.html">Available Rooms</a>
+          </li>
+          <li>
+            <a href="./my-reservations.html">My Reservations</a>
+          </li>
+          <li>
+            <a href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <form action="">
+        <div class="input-wrapper">
+          <label for="room">Room</label>
+          <span>Room 1</span>
+          <input id="room" type="number" />
+        </div>
+        <div class="input-wrapper">
+          <label for="theme">Theme</label>
+          <input id="theme" type="text" />
+        </div>
+        <div class="input-wrapper">
+          <label for="start-date">Start Date</label>
+          <input id="start-date" type="datetime-local" />
+        </div>
+        <div class="input-wrapper">
+          <label for="end-date">End Date</label>
+          <input id="end-date" type="datetime-local" />
+        </div>
+        <select
+          multiple="multiple"
+          name="participants"
+          id="participant-select"
+          data-room-size="12"
+        >
+          <option value="TEST">Test</option>
+          <option value="TEST2">Test2</option>
+          <option value="TEST3">Test3</option>
+          <option value="TEST4">Test4</option>
+        </select>
+        <button type="submit">Reserve</button>
+      </form>
+    </main>
+
+    <footer>
+      <span>© 2024 Room Reservation System</span>
+    </footer>
+    <script src="./assets/js/reserve.js"></script>
+  </body>
+</html>
