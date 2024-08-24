@@ -7,7 +7,7 @@
 }
 
 input,
-button,
+form button,
 select,
 textarea,
 a {
@@ -23,7 +23,7 @@ ul {
   list-style: none;
 }
 
-button {
+form button {
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -97,8 +97,56 @@ footer span {
 
 main {
   padding: 40px 0 80px;
-  display: grid;
-  justify-items: center;
+}
+
+form {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form span {
+  font-size: 18px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+input,
+select {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  outline: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form button {
+  font-size: 16px;
+  display: block;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #218838;
 }
 
 @media screen and (max-width: 1024px) {
@@ -110,6 +158,20 @@ main {
   nav ul li:not(.active) a:hover {
     font-size: 18px;
     box-shadow: rgba(127, 255, 0, 0.4) 3px 3px, rgba(127, 255, 0, 0.3) 7px 7px;
+  }
+
+  form span {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input,
+  select {
+    font-size: 14px;
+    padding: 6px 10px;
   }
 }
 
@@ -138,5 +200,23 @@ main {
   nav ul li:not(.active) a:hover {
     font-size: 14px;
     box-shadow: none;
+  }
+
+  form span {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input,
+  select {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  form button {
+    font-size: 14px;
   }
 }
